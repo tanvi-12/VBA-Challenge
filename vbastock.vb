@@ -36,7 +36,7 @@ Range("R2:R4") = 0
     'find opening value
     Cells(j, 12).Value = Cells(i, 3).Value
     'insert unique tickers
-        Cells(j, 10) = Cells(i, 1).Value
+    Cells(j, 10) = Cells(i, 1).Value
     
     'loop till blank cell
     While Cells(i, 1).Value <> ""
@@ -44,6 +44,7 @@ Range("R2:R4") = 0
          'sum the total volume
         Cells(j, 13).Value = Cells(j, 13).Value + Cells(i, 7).Value
         'if row does down equal row above
+        
         If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
         'find closing value
         Cells(j, 11).Value = Cells(i, 6)
